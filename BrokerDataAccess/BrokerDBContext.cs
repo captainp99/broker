@@ -1,12 +1,9 @@
 using BrokerDataAccess.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BrokerDataAccess
 {
-  public class BrokerDBContext : DbContext
+    public class BrokerDBContext : DbContext
   {
     public BrokerDBContext(DbContextOptions<BrokerDBContext> options)
         : base(options) { }

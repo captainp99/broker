@@ -1,12 +1,7 @@
 ﻿using BrokerBussiness.Models;
-using BrokerDataAccess;
 using BrokerDataAccess.Models;
 using BrokerDataAccess.Repository;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace BrokerBussiness
 {
@@ -15,13 +10,11 @@ namespace BrokerBussiness
         private readonly IRepository<Equity> _equityRepository;
         private readonly IRepository<Trader> _traderRepository;
         private readonly IRepository<TraderEquity> _traderEquityRepository;
-        //private readonly BrokerDBContext _context;
         public Broker(IRepository<Equity> equityRepository, IRepository<Trader> traderRepository, IRepository<TraderEquity> traderEquityRepository)
         {
             _equityRepository = equityRepository;
             _traderRepository = traderRepository;
             _traderEquityRepository = traderEquityRepository;
-            //_context = context;
         }
 
         public (bool success, string message) BuyEquities(BuyEquitiesRequest request)
@@ -102,10 +95,5 @@ namespace BrokerBussiness
             _traderRepository.Update(trader, trader.Id);
             return (true, "success");
         }
-
-        //public List<Trader> GetAllTraderWithEquities()
-        //{
-        //    return _context.Traders.Include(x => x.TraderEquities).ToList();
-        //}
     }
 }

@@ -1,10 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BrokerDataAccess.Models
 {
-  public class Equity
+    public class Equity
   {
         public Equity()
         {

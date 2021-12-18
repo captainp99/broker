@@ -2,7 +2,6 @@ using BrokerDataAccess;
 using BrokerDataAccess.Models;
 using BrokerDataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
@@ -127,7 +126,7 @@ namespace BrokerDataAccessTests
             Trader trader = null;
 
             // Act
-            var result = _repository.Update(trader, trader?.Id);
+            var result = _repository.Update(trader);
 
             // Assert
             Assert.Null(result);

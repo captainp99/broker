@@ -1,14 +1,7 @@
 using Broker.Models;
 using BrokerBussiness;
-using BrokerDataAccess;
-using BrokerDataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Broker.Controllers
 {
@@ -22,12 +15,6 @@ namespace Broker.Controllers
         {
             _broker = broker;
         }
-
-        //[HttpGet("getall")]
-        //public List<Trader> GetAll()
-        //{
-        //    return _broker.GetAllTraderWithEquities();
-        //}
 
         [HttpPost("buy-equities")]
         public IActionResult BuyEquities([FromBody] BuyEquitiesRequest request)

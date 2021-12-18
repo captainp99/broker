@@ -1,11 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace BrokerDataAccess.Models
 {
-  public class TraderEquity
+    public class TraderEquity
   {
         public int TraderEquityId { get; set; }
         public int TraderId { get; set; }

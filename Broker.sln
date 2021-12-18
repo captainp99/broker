@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerDataAccess", "BrokerD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{48BE4D40-C800-415F-83CB-B620B2014AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerApiTests", "BrokerApiTests\BrokerApiTests.csproj", "{5647CB1C-F148-49B1-B215-C516D9D03A1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerApiTests", "BrokerApiTests\BrokerApiTests.csproj", "{5647CB1C-F148-49B1-B215-C516D9D03A1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerBusinessTests", "BrokerBusinessTests\BrokerBusinessTests.csproj", "{2A272E10-220A-4993-9390-1FF7C08F681B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerBusinessTests", "BrokerBusinessTests\BrokerBusinessTests.csproj", "{2A272E10-220A-4993-9390-1FF7C08F681B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerDataAccessTests", "BrokerDataAccessTests\BrokerDataAccessTests.csproj", "{92F01229-15AB-4302-B64C-D27A3924A73D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerDataAccessTests", "BrokerDataAccessTests\BrokerDataAccessTests.csproj", "{92F01229-15AB-4302-B64C-D27A3924A73D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults", "{9240EC67-401D-4EEC-B5BC-E4B1960B4DDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,7 @@ Global
 		{5647CB1C-F148-49B1-B215-C516D9D03A1E} = {48BE4D40-C800-415F-83CB-B620B2014AF9}
 		{2A272E10-220A-4993-9390-1FF7C08F681B} = {48BE4D40-C800-415F-83CB-B620B2014AF9}
 		{92F01229-15AB-4302-B64C-D27A3924A73D} = {48BE4D40-C800-415F-83CB-B620B2014AF9}
+		{9240EC67-401D-4EEC-B5BC-E4B1960B4DDE} = {48BE4D40-C800-415F-83CB-B620B2014AF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7724B2CF-FD52-41D4-962A-740342BE3028}
